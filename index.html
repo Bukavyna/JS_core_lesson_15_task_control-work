@@ -9,9 +9,119 @@
 </head>
 <body>
 
+	<div class="container">
 
+		<div class="first show">
+			<div class="block top-block">
+				<p>Lorem ipsum dolor sit.</p>
+				<p>Lorem ipsum dolor sit.</p>
+				<p>Lorem ipsum dolor sit.</p>
+				<p>Lorem ipsum dolor sit.</p>
+				<p>Lorem ipsum dolor sit.</p>
+			</div>
+
+			<div class="center-block">
+				<input type="button" value="edit" class="btn-edit btn-shadow">
+				<input type="button" value="style" class="btn-style btn-shadow">
+			</div>
+
+			<div class="block bottom-block">
+				<div class="edit-block">
+					<textarea class="edit-area"></textarea>
+					<div class="edit-block-btn">
+						<input type="button" value="add" class="btn-add hover">
+						<input type="button" value="save" class="btn-save hover">
+					</div>
+				</div>
+				<div class="style-block">
+					<form>
+						<div class="form-size">
+							<h5>Font size</h5>
+							<input type="radio" onclick="fontSize()" name="size" value="12px"><span>12px</span>
+							<input type="radio" onclick="fontSize()" name="size" value="14px" checked><span>14px</span>
+							<input type="radio" onclick="fontSize()" name="size" value="16px"><span>16px</span>
+							<input type="radio" onclick="fontSize()" name="size" value="18px"><span>18px</span>
+							<input type="radio" onclick="fontSize()" name="size" value="20px"><span>20px</span>
+						</div>
+						<div class="form-family">
+							<h5>Font family</h5>
+							<select id="fontFamily">
+								<option value="">Choose option</option>
+								<option value="cursive">Cursive</option>
+								<option value="fantasy">fantasy</option>
+								<option value="monospace">monospace</option>
+								<option value="sans-serif">sans-serif</option>
+							</select>
+						</div>
+						<div class="form-color">
+							<div>
+								<h5>Color</h5>
+								<input type="button" value="Color of text" class="btn-text-color">
+								<div id="colors" class="hide" hidden>
+									<div class="color-box" onclick="colorText('blue')"></div>
+									<div class="color-box" onclick="colorText('green')"></div>
+									<div class="color-box" onclick="colorText('red')"></div>
+									<div class="color-box" onclick="colorText('yellow')"></div>
+									<div class="color-box" onclick="colorText('white')"></div>
+									<div class="color-box" onclick="colorText('black')"></div>
+									<div class="color-box" onclick="colorText('darksalmon')"></div>
+									<div class="color-box" onclick="colorText('orange')"></div>
+									<div class="color-box" onclick="colorText('purple')"></div>
+								</div>
+							</div>
+							<div class="form-background-color">
+								<h5>Background color</h5>
+								<input type="button" value="Background color" class="btn-bg-color">
+								<div id="background" class="hide" hidden>
+									<div class="color-box" onclick="backgroundColor('blue')"></div>
+									<div class="color-box" onclick="backgroundColor('green')"></div>
+									<div class="color-box" onclick="backgroundColor('red')"></div>
+									<div class="color-box" onclick="backgroundColor('yellow')"></div>
+									<div class="color-box" onclick="backgroundColor('white')"></div>
+									<div class="color-box" onclick="backgroundColor('black')"></div>
+									<div class="color-box" onclick="backgroundColor('darksalmon')"></div>
+									<div class="color-box" onclick="backgroundColor('orange')"></div>
+									<div class="color-box" onclick="backgroundColor('purple')"></div>
+								</div>
+							</div>
+						</div>
+						<div class="form-style">
+							<h5>Style</h5>
+							<div>
+								<input type="checkbox" onclick="fontBold()" name="style" class="check-bold"><span>Bold text</span>
+								<input type="checkbox" onclick="fontStyle()" name="style" class="check-cursive"><span>Cursive text</span>
+							</div>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="second">
+			<div class="block">
+				<h2>Choose what you want:</h2>
+				<form>
+					<input type="radio" name="choose"><span>table</span>
+					<input type="radio" name="choose"><span>list</span>
+				</form>
+				<div class="create-list">
+					<form name="form-list">
+						<input type="text" name="count">
+						<select name="type">
+							<option value="circle">circle</option>
+							<option value="disc">disc</option>
+							<option value="square">square</option>
+						</select>
+						<input type="button" value="create list" name="create" class="btn-create-list">
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 	<script src="base/JS/script.js"></script>
 
 </body>
 </html>
+
