@@ -11,6 +11,8 @@
 
 	<div class="container">
 
+		<!--First block. Блок у якому відображається текст-->
+
 		<div class="first show">
 			<div class="block top-block">
 				<p>Lorem ipsum dolor sit.</p>
@@ -20,10 +22,18 @@
 				<p>Lorem ipsum dolor sit.</p>
 			</div>
 
+			<!--end   First block. Блок у якому відображається текст-->
+			<!------------->
+			<!--Center block. Блок у якому розміщені кнопки "edit" i "style"-->
+
 			<div class="center-block">
 				<input type="button" value="edit" class="btn-edit btn-shadow">
 				<input type="button" value="style" class="btn-style btn-shadow">
 			</div>
+
+			<!--end   Center block. Блок у якому розміщені кнопки "edit" i "style"-->
+			<!------------->
+			<!--Bottom block. Блок у якому відображаються два блоки "edit" i "style"-->
 
 			<div class="block bottom-block">
 				<div class="edit-block">
@@ -33,6 +43,11 @@
 						<input type="button" value="save" class="btn-save hover">
 					</div>
 				</div>
+
+				<!--end   Bottom block. Блок у якому відображаються два блоки "edit" i "style"-->
+				<!------------->
+				<!--Style block. Блок у якому задаються "style"-->
+
 				<div class="style-block">
 					<form>
 						<div class="form-size">
@@ -97,26 +112,101 @@
 			</div>
 		</div>
 
+		<!--end   Style block. Блок у якому задаються "style"-->
+		<!------------->
+		<!--Second block. Блок у якому відображаються два блоки "create-table" i "create-list"-->
+
 		<div class="second">
 			<div class="block">
-				<h2>Choose what you want:</h2>
+				<h3>Choose what you want:</h3>
 				<form>
-					<input type="radio" name="choose"><span>table</span>
-					<input type="radio" name="choose"><span>list</span>
+					<input type="radio" name="choose" class="radio-create-list"><span>table</span>
+					<input type="radio" name="choose" class="radio-create-table"><span>list</span>
 				</form>
+
+				<!--Create list. Блок у якому відображається блок "create-list"-->
+
 				<div class="create-list">
-					<form name="form-list">
-						<input type="text" name="count">
-						<select name="type">
-							<option value="circle">circle</option>
-							<option value="disc">disc</option>
-							<option value="square">square</option>
-						</select>
-						<input type="button" value="create list" name="create" class="btn-create-list">
+					<form name="form-list" class="form-list">
+						<div class="input-list">
+							<span>Count LI:</span>
+							<input type="text" name="count" class="input-list-text">
+						</div>
+						<div class="input-list">
+							<span>Type of marks:</span>
+							<select name="type1" id="input-list-text" class="input-list-text">
+								<option value="circle">circle</option>
+								<option value="disc">disc</option>
+								<option value="square">square</option>
+							</select>
+						</div>
+						<input type="button" value="Create list" name="create" class="btn-create list">
 					</form>
 				</div>
+
+				<!--end   Create list. Блок у якому відображається блок "create-list"-->
+				<!------------->
+				<!--Create table. Блок у якому відображається блок "create-table"-->
+
+					<div class="create-table block">
+						<form name="form-table" class="form-table">
+							<div class="input-list">
+								<span>Count TR:</span>
+								<input type="text" name="rows" placeholder="Count TR" class="input-list-text">
+							</div>
+							<div class="input-list">
+								<span>Count TD:</span>
+								<input type="text" name="columns" placeholder="Count TD" class="input-list-text">
+							</div>
+							<h5>Add style to your table:</h5>
+							<div class="input-list">
+								<span>Width of TR:</span>
+								<input type="text" name="widthTr" placeholder="Width of TR" class="input-list-text">
+							</div>
+							<div class="input-list">
+								<span>Height of TD:</span>
+								<input type="text" name="heightTd" placeholder="Height of TD" class="input-list-text">
+							</div>
+							<div class="input-list">
+								<div class="border-table border-table-1">
+									<span class="span-border span-border-left">Width of border</span>
+									<input type="text" name="borderWidth" placeholder="Width" class="input-table-text">
+								</div>
+								<div class="border-table">
+									<span class="span-border">Type of border:</span>
+									<select name="tableBorderType" class="input-table-text">
+										<option value="solid">solid</option>
+										<option value="dotted">dotted</option>
+										<option value="dashed">dashed</option>
+										<option value="double">double</option>
+										<option value="ridge">ridge</option>
+									</select>
+								</div>
+								<div class="border-table">
+									<span class="span-border">Color of border:</span>
+									<select name="tableBorderColor" class="border-color input-table-text">
+										<option value="blue">blue</option>
+										<option value="green">green</option>
+										<option value="red">red</option>
+										<option value="yellow">yellow</option>
+										<option value="yellow">yellow</option>
+										<option value="black">black</option>
+										<option value="darksalmon">darksalmon</option>
+										<option value="orange">orange</option>
+										<option value="purple">purple</option>
+									</select>
+								</div>
+							</div>
+							<input type="button" value="Create table" name="create" class="btn-create table">
+						</form>
+					</div>
 			</div>
+
+			<!--end   Create table. Блок у якому відображається блок "create-table"-->
+
 		</div>
+
+		<!--end   Second block. Блок у якому відображаються два блоки "create-table" i "create-list"-->
 
 	</div>
 
